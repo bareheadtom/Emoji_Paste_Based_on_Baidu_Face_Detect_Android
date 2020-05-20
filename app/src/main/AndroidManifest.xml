@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.muzhi.camerasdk.example"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--允许应用程序改变网络状态-->
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <!--允许应用程序改变WIFI连接状态-->
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!--允许应用程序访问有关的网络信息-->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!--允许应用程序访问WIFI网卡的网络信息-->
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!--允许应用程序完全使用网络-->
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.muzhi.camerasdk.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity android:name="balloonrelativelayout.MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity1"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+
+        <activity android:name=".ResultActivity" /> <!-- CameraSDK相册选取 -->
+        <activity android:name="com.muzhi.camerasdk.PhotoPickActivity" />
+        <activity android:name="com.muzhi.camerasdk.PreviewActivity" />
+        <activity android:name="com.muzhi.camerasdk.CropperImageActivity" />
+        <activity android:name="com.muzhi.camerasdk.FilterImageActivity" />
+        <activity android:name="com.muzhi.camerasdk.CutActivity" />
+        <activity android:name="com.muzhi.camerasdk.PhotoEnhanceActivity" />
+        <activity android:name="com.muzhi.camerasdk.StickerActivity" />
+        <activity android:name="com.muzhi.camerasdk.GraffitiActivity" />
+        <activity android:name="recyclerviewtest4.MyCloudAlbumActivity" />
+        <activity android:name="site.SiteActivity" />
+        <activity android:name="recyclerviewtest4.DownLoadActivity"/>
+
+    </application>
+
+</manifest>

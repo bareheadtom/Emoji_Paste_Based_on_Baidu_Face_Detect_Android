@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎来到aimoji官方网页"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#77C3F2"/>
+    <WebView
+        android:id="@+id/web_site"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':app', ':camerasdk', ':camerasdkcommon', ':aip-java-sdk-4.11.1'

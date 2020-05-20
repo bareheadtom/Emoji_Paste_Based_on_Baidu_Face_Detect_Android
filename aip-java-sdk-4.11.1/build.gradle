@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('aip-java-sdk-4.11.1.jar'))

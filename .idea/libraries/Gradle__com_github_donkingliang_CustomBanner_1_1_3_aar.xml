@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.donkingliang:CustomBanner:1.1.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5d18a2dbea01250710c0b0010f285bbd/CustomBanner-1.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5d18a2dbea01250710c0b0010f285bbd/CustomBanner-1.1.3/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
